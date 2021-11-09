@@ -1,9 +1,6 @@
 {
     "private": true,
     "name": "react-admin-lerna",
-    "engines": {
-        "node": "14.x"
-      },
     "scripts": {
         "build": "lerna run build",
         "watch": "lerna run --parallel watch",
