@@ -11,5 +11,6 @@ docs/.jekyll-cache
 packages/react-admin/docs
 examples/**/static
 examples/**/dist
+examples/**/node_modules
 cypress/videos
 cypress/screenshots
