@@ -16,8 +16,8 @@ const customEnglishMessages: TranslationMessages = {
             monthly_revenue: 'Monthly Revenue',
             month_history: '30 Day Revenue History',
             new_orders: 'New Orders',
-            pending_reviews: 'Pending Reviews',
-            all_reviews: 'See all reviews',
+            important_news: 'Communication',
+            all_reviews: 'See all comms',
             new_customers: 'New Customers',
             all_customers: 'See all customers',
             pending_orders: 'Pending Orders',
@@ -35,11 +35,45 @@ const customEnglishMessages: TranslationMessages = {
         },
         menu: {
             sales: 'Sales',
-            catalog: 'Catalog',
+            catalog: 'Inventory',
             customers: 'Customers',
         },
     },
     resources: {
+        transactions: {
+            name: 'Transaction |||| Transactions',
+            fields: {
+                commands: 'Orders',
+                first_seen: 'First seen',
+                groups: 'Segments',
+                last_seen: 'Last seen',
+                last_seen_gte: 'Visited Since',
+                name: 'Name',
+                total_spent: 'Total spent',
+                password: 'Password',
+                confirm_password: 'Confirm password',
+                stateAbbr: 'State',
+            },
+            filters: {
+                date: 'Date',
+                today: 'Today',
+                this_week: 'This week',
+                last_week: 'Last week',
+                this_month: 'This month',
+                last_month: 'Last month',
+                earlier: 'Earlier',
+                is_nft: 'Is NFT',
+                group: 'Segment',
+            },
+            fieldGroups: {
+                identity: 'Identity',
+                address: 'Address',
+                stats: 'Stats',
+                history: 'History',
+                password: 'Password',
+                change_password: 'Change Password',
+            },
+        },
         customers: {
             name: 'Customer |||| Customers',
             fields: {
@@ -127,7 +161,7 @@ const customEnglishMessages: TranslationMessages = {
             },
         },
         products: {
-            name: 'Poster |||| Posters',
+            name: 'Token |||| Tokens',
             fields: {
                 category_id: 'Category',
                 height_gte: 'Min height',

@@ -3,7 +3,6 @@ import { useVersion, useDataProvider } from 'react-admin';
 import { useMediaQuery, Theme } from '@material-ui/core';
 import { subDays } from 'date-fns';
 
-import Welcome from './Welcome';
 import MonthlyRevenue from './MonthlyRevenue';
 import NbNewOrders from './NbNewOrders';
 import PendingOrders from './PendingOrders';
@@ -165,7 +164,6 @@ const Dashboard = () => {
     return isXSmall ? (
         <div>
             <div style={styles.flexColumn as CSSProperties}>
-                <Welcome />
                 <MonthlyRevenue value={revenue} />
                 <VerticalSpacer />
                 <NbNewOrders value={nbNewOrders} />
@@ -178,9 +176,6 @@ const Dashboard = () => {
         </div>
     ) : isSmall ? (
         <div style={styles.flexColumn as CSSProperties}>
-            <div style={styles.singleCol}>
-                <Welcome />
-            </div>
             <div style={styles.flex}>
                 <MonthlyRevenue value={revenue} />
                 <Spacer />
@@ -198,7 +193,6 @@ const Dashboard = () => {
         </div>
     ) : (
         <>
-            <Welcome />
             <div style={styles.flex}>
                 <div style={styles.leftCol}>
                     <div style={styles.flex}>

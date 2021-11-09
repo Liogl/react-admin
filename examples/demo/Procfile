@@ -1,0 +1,3 @@
+web: make install
+web: make build
+web: make run-demo

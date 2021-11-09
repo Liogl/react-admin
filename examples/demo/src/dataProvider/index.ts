@@ -1,5 +1,6 @@
 import { DataProvider } from 'react-admin';
 import fakeServerFactory from '../fakeServer';
+//import realServer from '../realServer';
 
 export default (type: string) => {
     // The fake servers require to generate data, which can take some time.
@@ -21,10 +22,10 @@ export default (type: string) => {
             };
         },
     });
-
     return dataProviderWithGeneratedData;
 };
 
+//await realServer(process.env.REACT_APP_DATA_PROVIDER || '');
 const getDataProvider = async (type: string): Promise<DataProvider> => {
     await fakeServerFactory(process.env.REACT_APP_DATA_PROVIDER || '');
     /**

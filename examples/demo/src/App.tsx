@@ -9,6 +9,7 @@ import { Dashboard } from './dashboard';
 import customRoutes from './routes';
 import englishMessages from './i18n/en';
 
+import transactions from './transactions';
 import visitors from './visitors';
 import orders from './orders';
 import products from './products';
@@ -52,6 +53,7 @@ const App = () => {
             <Resource name="products" {...products} />
             <Resource name="categories" {...categories} />
             <Resource name="reviews" {...reviews} />
+            <Resource name="transactions" {...transactions} />
         </Admin>
     );
 };

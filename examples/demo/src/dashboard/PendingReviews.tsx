@@ -30,7 +30,7 @@ const PendingReviews = ({ reviews = [], customers = {}, nb }: Props) => {
         <CardWithIcon
             to="/reviews"
             icon={CommentIcon}
-            title={translate('pos.dashboard.pending_reviews')}
+            title={translate('pos.dashboard.important_news')}
             subtitle={nb}
         >
             <List>

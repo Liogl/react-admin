@@ -12,6 +12,7 @@ import {
     ReduxState,
 } from 'react-admin';
 
+import transactions from '../transactions';
 import visitors from '../visitors';
 import orders from '../orders';
 import invoices from '../invoices';
@@ -146,6 +147,15 @@ const Menu = ({ dense = false }: MenuProps) => {
                     smart_count: 2,
                 })}
                 leftIcon={<reviews.icon />}
+                dense={dense}
+            />
+            <MenuItemLink
+                to={{
+                    pathname: '/transactions',
+                    state: { _scrollToTop: true },
+                }}
+                primaryText="Transactions"
+                leftIcon={<transactions.icon />}
                 dense={dense}
             />
         </div>
